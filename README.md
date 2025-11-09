@@ -50,3 +50,13 @@ It simulates a real-world data flow where monthly sales CSVs are cleaned and con
       +-----------------+
       | BI / Dashboard  |
       +-----------------+
+
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/<your-username>/retail-sales-etl-pipeline.git
+cd retail-sales-etl-pipeline
