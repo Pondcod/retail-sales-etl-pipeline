@@ -20,3 +20,33 @@ It simulates a real-world data flow where monthly sales CSVs are cleaned and con
 
 ## 🏗️ Architecture Diagram
 
+      +-----------------+
+      | Monthly CSVs    |
+      | (raw data)      |
+      +--------+--------+
+               |
+               v
+      [ Extract with pandas ]
+               |
+               v
+      +-----------------+
+      | Clean & Standard|
+      | using pandas/numpy |
+      +--------+--------+
+               |
+               v
+      [ Upload to AWS S3 ]
+               |
+               v
+      +-----------------+
+      | PostgreSQL DB   |
+      | fact_sales table|
+      +--------+--------+
+               |
+               v
+      [ SQL Analytics ]
+               |
+               v
+      +-----------------+
+      | BI / Dashboard  |
+      +-----------------+
