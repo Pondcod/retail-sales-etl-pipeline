@@ -54,6 +54,29 @@ It simulates a real-world data flow where monthly sales CSVs are cleaned and con
 
 ---
 
+## 📂 Project Structure
+
+retail-sales-etl-pipeline/
+├─ data/
+│ ├─ raw/ # Unprocessed CSVs (gitignored)
+│ └─ processed/ # Cleaned and combined data
+├─ sql/
+│ ├─ create_table.sql # PostgreSQL schema
+│ └─ analytics_queries.sql # Example business queries
+├─ src/
+│ ├─ config.py # Environment variables
+│ ├─ extract.py # Read & combine CSVs
+│ ├─ transform.py # Clean and standardize data
+│ ├─ load.py # Upload to S3 + PostgreSQL
+│ └─ run_pipeline.py # Orchestrates ETL
+├─ .env.example # Example environment config
+├─ requirements.txt
+├─ .gitignore
+└─ README.md
+
+
+---
+
 ## ⚙️ Setup Instructions
 
 ### 1. Clone the Repository
