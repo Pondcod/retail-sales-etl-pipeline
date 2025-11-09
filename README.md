@@ -58,5 +58,5 @@ It simulates a real-world data flow where monthly sales CSVs are cleaned and con
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/<your-username>/retail-sales-etl-pipeline.git
+git clone https://github.com/Pondcod/retail-sales-etl-pipeline.git
 cd retail-sales-etl-pipeline
